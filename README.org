@@ -1,0 +1,8 @@
+#+TITLE: vimium-theme
+
+* How it looks
+[[file:img/screenshot.png]]
+
+* Install
+Open Vimium Options and append the contents of =stylesheet.css=.
+[[file:img/vimium-options.png]]
