@@ -1,0 +1,214 @@
+:root {
+	--font-size: 13;
+	--font-size-hints: 12;
+	--font-size-url: 12;
+
+	--font-weight: normal;
+	--font-weight-medium: medium;
+	--font-weight-bold: bold;
+
+	--font: "Helvetica Neue", "Helvetica", "Arial", sans-serif; /* Font used in the UI */
+	
+	--shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	--shadow-vomnibar: 0 2px 16px rgba(0,0,0,0.3);
+
+/* -------- VOMNIBAR & HUD -------- */
+	--fg: #FFFFFF;
+	--fg-dark: #ffffff65;
+	--fg-selected: #d4e7ff;
+
+	--bg: #2A2A2E;
+	--bg-searcharea: #222225;
+	--bg-selected: #2165D9;
+
+	--border: #404046;
+
+/* -------- HINTS -------- */
+	--bg-hints: #FFD752;      /* Background color of link hints */
+	--border-hints: #F4CA46;  /* Border color of link hints */
+	--fg-hints: #000000;      /* Text color of link hints, (don't forget to change `#vimiumHintMarkerContainer div > .matchingCharacter ~ span`) */
+}
+
+/* --------------------------------- CSS --------------------------------- */
+
+/* -------- HINTS -------- */
+#vimiumHintMarkerContainer div.internalVimiumHintMarker, #vimiumHintMarkerContainer div.vimiumHintMarker {
+	background: var(--bg-hints);
+	border: 1px solid var(--border-hints);
+	box-shadow: var(--shadow);
+	padding: 2px 3px;
+}
+
+#vimiumHintMarkerContainer div span {
+	color: var(--fg-hints);
+	font-family: var(--font);
+	font-size: var(--font-size-hints);
+	font-weight: var(--font-weight-bold);
+	text-shadow: none;
+}
+
+#vimiumHintMarkerContainer div > .matchingCharacter {
+	opacity: 0.3;
+}
+
+#vimiumHintMarkerContainer div > .matchingCharacter ~ span {
+	color: var(--hints-main-fg);
+}
+
+/* -------- VOMNIBAR -------- */
+#vomnibar {
+	border-radius: 0;
+	border: 0;
+	box-shadow: var(--shadow-vomnibar);
+	left: 50%;
+	margin-left: -320px;
+	max-width: 640px;
+	top: 18px;
+}
+
+#vomnibar .vomnibarSearchArea {
+	background: var(--bg-searcharea);
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+}
+
+#vomnibar input {
+	background: var(--bg-searcharea);
+	color: var(--fg);
+	font-family: var(--font);
+	border-radius: 0;
+	border: 0;
+	box-shadow: none;
+	font-size: 24px;
+	height: initial;
+	padding: 16px 24px;
+}
+
+#vomnibar ul {
+	background: var(--bg);
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#vomnibar li {
+	background: var(--bg);
+	border: 0;
+	display: flex;
+	line-height: 1;
+	padding: 8px 16px 8px 24px;
+}
+
+#vomnibar li .vomnibarTopHalf,
+#vomnibar li .vomnibarBottomHalf {
+	font-size: var(--font-size);
+	font-family: var(--font);
+	font-weight: var(--font-weight-medium);
+	margin: 0;
+	padding: 0;
+}
+
+#vomnibar li .vomnibarTopHalf {
+	display: flex;
+	flex: 0 0 67%;
+	margin-right: 16px;
+}
+
+#vomnibar li .vomnibarBottomHalf {
+	flex: 0 0 33%;
+}
+
+#vomnibar li .vomnibarSource.vomnibarNoInsertText,
+#vomnibar li .vomnibarSource.vomnibarInsertText {
+	display: none;
+}
+
+#vomnibar li .vomnibarSource,
+#vomnibar li .vomnibarUrl {
+	color: var(--fg-dark);
+}
+
+#vomnibar li .vomnibarSource {
+	display: block;
+	flex-shrink: 0;
+	font-size: 11px;
+	font-weight: var(--font-weight-bold);
+	line-height: 2;
+	margin-right: 12px;
+	text-transform: uppercase;
+}
+
+#vomnibar li .vomnibarTitle,
+#vomnibar li .vomnibarUrl {
+	line-height: 1.6;
+}
+
+#vomnibar li .vomnibarTitle {
+	color: var(--fg);
+	display: block;
+	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#vomnibar li .vomnibarUrl {
+	padding-right: 6px;
+	display: block;
+	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#vomnibar li .vomnibarMatch {
+	color: inherit;
+}
+
+#vomnibar li .vomnibarTitle .vomnibarMatch {
+	color: var(--fg);  
+}
+
+#vomnibar li.vomnibarSelected {
+	background: var(--bg-selected);
+}
+
+#vomnibar li.vomnibarSelected .vomnibarSource,
+#vomnibar li.vomnibarSelected .vomnibarUrl {
+	color: var(--fg-selected);
+}
+
+#vomnibar li.vomnibarSelected .vomnibarTitle {
+	color: var(--fg);
+}
+
+#vomnibar li.vomnibarSelected .vomnibarMatch {
+	color: inherit;
+}
+
+/* -------- HUD -------- */
+div.vimiumHUD {
+	background: var(--bg);
+	border: 1px solid var(--border);
+	box-shadow: var(--shadow);
+	border-radius: 0px;
+}
+
+div.vimiumHUD span#hud-find-input,
+div.vimiumHUD .vimiumHUDSearchAreaInner {
+	color: var(--fg);
+	font-family: var(--font);
+	font-size: 13;
+	font-weight: var(--font-weight-medium);
+}
+
+div.vimiumHUD .hud-find {
+	background-color: transparent;
+	border: none;
+}
+
+div.vimiumHUD .vimiumHUDSearchArea {
+	background-color: transparent;
+	padding: 6px;
+}
