@@ -26,6 +26,13 @@ Note that you have to reload the page for the custom CSS to take effect.
 
 ### Link Hints
 
+![Link Hints](https://raw.githubusercontent.com/ghzliahlam/vimium-custom-dark-theme-ii/master/screenshot-link-hints.png)
+
 ### Vomnibar
 
+![Vomnibar](https://raw.githubusercontent.com/ghzliahlam/vimium-custom-dark-theme-ii/master/screenshot-vomnibar.png)
+
 ### Heads Up Display
+
+![Heads Up Display](https://raw.githubusercontent.com/ghzliahlam/vimium-custom-dark-theme-ii/master/screenshot-heads-up-display.png)
+
