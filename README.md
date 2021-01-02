@@ -1,4 +1,4 @@
-# vimium-custom-dark-theme
+# vimium-custom-dark-theme-ii
 A custom dark theme for the Vimium browser add-on, forked from [vimium-theme](https://github.com/sei40kr/vimium-theme). For more custom themes, visit [Vimium's GitHub wiki](https://github.com/philc/vimium/wiki/Theme) on themes.
 
 ---
