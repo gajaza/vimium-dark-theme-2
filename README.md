@@ -1,5 +1,7 @@
-# vimium-custom-dark-theme-ii
-A custom dark theme for the Vimium browser add-on, forked from [sei40kr/vimium-theme](https://github.com/sei40kr/vimium-theme). For more custom themes, visit [Vimium's GitHub wiki](https://github.com/philc/vimium/wiki/Theme) on themes.
+# Vimium Dark Theme 2
+A custom dark theme for the Vimium browser add-on. A variation of my [vimium-dark-theme](https://github.com/jazal1/vimium-dark-theme).
+
+Forked from [sei40kr/vimium-theme](https://github.com/sei40kr/vimium-theme). For more custom themes, visit [Vimium's GitHub wiki](https://github.com/philc/vimium/wiki/Theme) on themes.
 
 ## Installing Vimium
 
@@ -24,13 +26,13 @@ Note that you may have to reload the page for the custom CSS to take effect.
 
 ### Link Hints
 
-![Link Hints](https://raw.githubusercontent.com/ghzliahlam/vimium-custom-dark-theme-ii/master/screenshot-link-hints.png)
+![Link Hints](https://raw.githubusercontent.com/jazal1/vimium-dark-theme-2/master/screenshot-link-hints.png)
 
 ### Vomnibar
 
-![Vomnibar](https://raw.githubusercontent.com/ghzliahlam/vimium-custom-dark-theme-ii/master/screenshot-vomnibar.png)
+![Vomnibar](https://raw.githubusercontent.com/jazal1/vimium-dark-theme-2/master/screenshot-vomnibar.png)
 
 ### Heads Up Display
 
-![Heads Up Display](https://raw.githubusercontent.com/ghzliahlam/vimium-custom-dark-theme-ii/master/screenshot-heads-up-display.png)
+![Heads Up Display](https://raw.githubusercontent.com/jazal1/vimium-dark-theme-2/master/screenshot-heads-up-display.png)
 
