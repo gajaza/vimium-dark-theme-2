@@ -199,7 +199,7 @@ div.vimiumHUD span#hud-find-input,
 div.vimiumHUD .vimiumHUDSearchAreaInner {
     color: var(--fg);
     font-family: var(--font);
-    font-size: 13;
+    font-size: 11;
     font-weight: var(--font-weight-medium);
 }
 
@@ -210,5 +210,8 @@ div.vimiumHUD .hud-find {
 
 div.vimiumHUD .vimiumHUDSearchArea {
     background-color: transparent;
-    padding: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 3px;
 }
